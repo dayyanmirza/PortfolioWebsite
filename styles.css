@@ -1,0 +1,8 @@
+.placeholder{
+    background: purple;
+}
+/* In order to select an element that we want to change we simply use . in front of it and then the class name in div.*/
+
+.anotherClass{
+    background: aqua;
+}
