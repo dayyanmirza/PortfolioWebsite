@@ -6,4 +6,11 @@
     padding: 38px;
 }
 
-
+.left-side{
+    display: flex;
+}
+/* Traverse down a tree--> Going to look at the nav-wrapper then it is going to go down to the left side, in the html, and look at any div's inside of there; and styles will be placed on those div's. */
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+}
