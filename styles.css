@@ -1,8 +1,9 @@
-.placeholder{
-    background: purple;
-}
 /* In order to select an element that we want to change we simply use . in front of it and then the class name in div.*/
-
-.anotherClass{
-    background: aqua;
+/* Flex box used for layout. Looks through the nav-wrapper and checks which elements are left and right and puts them next to each other.*/
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
 }
+
+
