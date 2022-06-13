@@ -29,4 +29,11 @@
     text-decoration: none;
     transition: color 0.5s;
 }
+/* So when you hover over the link the underline fades in and becomes black.*/
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+/* So when you hover over the link the actual home and about turn black. */
+.nav-link-wrapper a:hover {
 
+}
