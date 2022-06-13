@@ -1,5 +1,19 @@
 /* In order to select an element that we want to change we simply use . in front of it and then the class name in div.*/
-/* Flex box used for layout. Looks through the nav-wrapper and checks which elements are left and right and puts them next to each other.*/
+
+/*  Master Styles  */
+body{
+    margin: 0px;
+}
+
+/*CSS grid used to align items somewhat similar to flex box but has its differences.(Layout in grid).*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Flex box used for layout (small elements built out using flex box). Looks through the nav-wrapper and checks which elements are left and right and puts them next to each other.*/
+
+/*  Nav styles  */
 .nav-wrapper{
     display: flex;
     justify-content: space-between;
@@ -37,3 +51,6 @@
 .nav-link-wrapper a:hover {
     color: black;
 }
+
+/*  Portfolio styles  */
+
