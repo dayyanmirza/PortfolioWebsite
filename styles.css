@@ -35,5 +35,5 @@
 }
 /* So when you hover over the link the actual home and about turn black. */
 .nav-link-wrapper a:hover {
-
+    color: black;
 }
