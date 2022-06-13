@@ -15,3 +15,18 @@
     font-size: 0.9em;
     text-transform: uppercase;
 }
+
+/* Adding styles to nav-link-wrapper. So when you hover over the links it fades in and out. */
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+/* Adds colour to the links, and a nice underline underneath the links. */
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
