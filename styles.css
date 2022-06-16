@@ -70,3 +70,15 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex; /* All the items use flexbox.*/
+    flex-direction: column;
+    justify-content: center; /* Centers items from left to right.*/
+    align-items: center; /* Centers items from top to bottom.*/
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
