@@ -54,3 +54,19 @@ body{
 
 /*  Portfolio styles  */
 
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover; /* background-size: cover; -----> makes sure even though all images are a different size they appear as the same size on the website. And it 'crops' the images so they sit nicely next to each other. */
+    background-position: center;
+    background-repeat: no-repeat;
+}
