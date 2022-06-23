@@ -79,6 +79,7 @@ body{
     justify-content: center; /* Centers items from left to right.*/
     align-items: center; /* Centers items from top to bottom.*/
     height: 100%;
+    text-align: center;
     padding-left: 100px;
     padding-right: 100px;
 }
