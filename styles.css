@@ -1,7 +1,7 @@
 /* In order to select an element that we want to change we simply use . in front of it and then the class name in div.*/
 
 /*  Master Styles  */
-body{
+body {
     margin: 0px;
 }
 
@@ -14,13 +14,13 @@ body{
 /* Flex box used for layout (small elements built out using flex box). Looks through the nav-wrapper and checks which elements are left and right and puts them next to each other.*/
 
 /*  Nav styles  */
-.nav-wrapper{
+.nav-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 38px;
 }
 
-.left-side{
+.left-side {
     display: flex;
 }
 /* Traverse down a tree--> Going to look at the nav-wrapper then it is going to go down to the left side, in the html, and look at any div's inside of there; and styles will be placed on those div's. */
@@ -31,7 +31,7 @@ body{
 }
 
 /* Adding styles to nav-link-wrapper. So when you hover over the links it fades in and out. */
-.nav-link-wrapper{
+.nav-link-wrapper {
     height: 22px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
@@ -54,16 +54,16 @@ body{
 
 /*  Portfolio styles  */
 
-.portfolio-items-wrapper{
+.portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.portfolio-item-wrapper{
+.portfolio-item-wrapper {
     position: relative;
 }
 
-.portfolio-img-background{
+.portfolio-img-background {
     height: 350px;
     width: 100%;
     background-size: cover; /* background-size: cover; -----> makes sure even though all images are a different size they appear as the same size on the website. And it 'crops' the images so they sit nicely next to each other. */
@@ -71,7 +71,7 @@ body{
     background-repeat: no-repeat;
 }
 
-.img-text-wrapper{
+.img-text-wrapper {
     position: absolute;
     top: 0;
     display: flex; /* All the items use flexbox.*/
@@ -84,10 +84,26 @@ body{
     padding-right: 100px;
 }
 
-.logo-wrapper img{
+.logo-wrapper img {
     width: 50%;
     margin-bottom: 20px;
-
-
 }
 
+/* So that when you hover over image the text appears.*/
+.img-text-wrapper .subtitle {
+    transition: 2s;
+    font-weight: 600;
+    color: transparent;
+}
+
+/* Needs to be more specific w/ selector. That's why you add .img-text-wrapper:hover */
+/* As subtitle is going to change based on whether someone is hovering over it or not.*/
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.img-darken {
+    transition: 2s;
+    filter: brightness(10%);
+}
