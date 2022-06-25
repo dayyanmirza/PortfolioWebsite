@@ -1,7 +1,8 @@
 /* In order to select an element that we want to change we simply use . in front of it and then the class name in div.*/
 
-/*  Master Styles  */
+/* Master Styles */
 body {
+    font-family: 'Open Sans', sans-serif;
     margin: 0px;
 }
 
@@ -13,7 +14,7 @@ body {
 
 /* Flex box used for layout (small elements built out using flex box). Looks through the nav-wrapper and checks which elements are left and right and puts them next to each other.*/
 
-/*  Nav styles  */
+/* Nav styles */
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -52,7 +53,7 @@ body {
     color: black;
 }
 
-/*  Portfolio styles  */
+/* Portfolio styles */
 
 .portfolio-items-wrapper {
     display: grid;
@@ -106,4 +107,22 @@ body {
 .img-darken {
     transition: 2s;
     filter: brightness(10%);
+}
+
+/* About page styles */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-img-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color: lightseagreen;
 }
